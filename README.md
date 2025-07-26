@@ -18,7 +18,6 @@ FlixHunt is a **Netflix-inspired movie and TV show discovery platform** where us
 - **HTML5** & **CSS3** (Netflix-inspired UI)  
 - **JavaScript (Vanilla)** for dynamic content loading  
 - **TMDB API** for movies & TV shows  
-- **Kitsu API** for anime data  
 - **LocalStorage** for saving wishlist data  
 - **Netlify** for deployment  
 
@@ -26,11 +25,11 @@ FlixHunt is a **Netflix-inspired movie and TV show discovery platform** where us
 
 ## 📸 Screenshots
 
-| Home Page | Movies Page | Anime Page |
+| Home Page | Movies Page | TV Shows Page |
 |-----------|------------|------------|
-| ![Home](images/home.png) | ![Movies](images/movies.png) | ![Anime](images/anime.png) |
+| ![Home](images/home.png) | ![Movies](images/movies.png) | ![TV Show](images/tvshows.png) |
 
-*(Replace these with your own screenshots in the `images/` folder)*  
+
 
 ---
 
