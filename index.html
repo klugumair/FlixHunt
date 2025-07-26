@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlixHunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Flix<span>Hunt</span></div>
+        <nav>
+            <button class="nav-btn" id="homeBtn">Home</button>
+            <button class="nav-btn" id="moviesBtn">Movies</button>
+            <button class="nav-btn" id="tvBtn">TV Shows</button>
+        </nav>
+        <input type="text" id="searchInput" placeholder="Search Movies, Shows, Anime...">
+        <select id="genreSelect">
+            <option value="">All Genres</option>
+        </select>
+        <button id="wishlistBtn">My List</button>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="heroBanner">
+        <img id="heroImage" alt="Featured Content">
+        <div class="hero-info">
+            <h1 id="heroTitle"></h1>
+            <p id="heroOverview"></p>
+            <button id="playBtn">▶ Play</button>
+            <button id="detailsBtn">ℹ Details</button>
+        </div>
+    </section>
+
+    <!-- Content Rows -->
+    <main>
+        <section>
+            <h2>Trending Movies</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" onclick="scrollRow('moviesGrid', -300)">&#10094;</button>
+                <div class="row" id="moviesGrid"></div>
+                <button class="scroll-btn right" onclick="scrollRow('moviesGrid', 300)">&#10095;</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trending TV Shows</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" onclick="scrollRow('tvGrid', -300)">&#10094;</button>
+                <div class="row" id="tvGrid"></div>
+                <button class="scroll-btn right" onclick="scrollRow('tvGrid', 300)">&#10095;</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trending Anime</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" onclick="scrollRow('animeGrid', -300)">&#10094;</button>
+                <div class="row" id="animeGrid"></div>
+                <button class="scroll-btn right" onclick="scrollRow('animeGrid', 300)">&#10095;</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Your Wishlist</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" onclick="scrollRow('wishlistGrid', -300)">&#10094;</button>
+                <div class="row" id="wishlistGrid"></div>
+                <button class="scroll-btn right" onclick="scrollRow('wishlistGrid', 300)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="detailsContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollRow(rowId, amount) {
+            document.getElementById(rowId).scrollBy({
+                left: amount,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
