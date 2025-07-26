@@ -8,7 +8,7 @@ FlixHunt is a **Netflix-inspired movie and TV show discovery platform** where us
 
 ## ✨ Features
 - 🔥 **Trending Movies & TV Shows** – Powered by **TMDB API**   
-- 🎭 **Genre Filtering** – Browse content by Action, Comedy, Romance, etc.  
+- 🎭 **Genre Filtering** – Browse content by Action, Comedy, Romance, westren ,etc.  
 - ❤️ **Wishlist Support** – Add or remove favorites in one click  
 - 📱 **Responsive Design** – Netflix-style UI, optimized for mobile & desktop  
 
